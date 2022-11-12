@@ -15,8 +15,9 @@ for(let i = 0; i < 500; i++) {
 
 function randomColor(square) {
     const num =  Math.floor(Math.random()*5);
-    square.style.backgroundColor = colors[num]
-    square.style.boxShadow = `0 0 2px ${colors[num]}, 0 0 10px ${colors[num]}`
+    const color = colors[num];
+    square.style.backgroundColor = color;
+    square.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`;
 }
 function removeColor(square){
     square.style.backgroundColor = '#1d1d1d';
